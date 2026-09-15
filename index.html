@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BIO MUNDO es una biblioteca digital de biología para estudiantes de secundaria, con contenidos de 1° a 6° de secundaria."
+    />
+    <title>BIO MUNDO | Biblioteca digital de biología</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="BIO MUNDO inicio">
+          <span class="brand-mark">B</span>
+          <span class="brand-text">
+            <strong>BIO MUNDO</strong>
+            <small>Biblioteca digital</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <nav id="main-nav" class="site-nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#niveles">Niveles</a>
+          <a href="#galeria">3D &amp; temas</a>
+          <a href="#videos">Videos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Ministerio de Educación · Nivel secundario</p>
+            <h1>Aprende biología con claridad, creatividad y profundidad.</h1>
+            <p class="hero-text">
+              BIO MUNDO es una biblioteca digital diseñada para estudiantes de
+              1.º a 6.º de secundaria, con temas de biología organizados,
+              visuales y fáciles de consultar.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#niveles">Explorar niveles</a>
+              <a class="btn btn-secondary" href="#videos">Ver videos</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Estadísticas del proyecto">
+              <li>
+                <strong>6</strong>
+                <span>Niveles</span>
+              </li>
+              <li>
+                <strong>+30</strong>
+                <span>Temas</span>
+              </li>
+              <li>
+                <strong>3D</strong>
+                <span>Visuales</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Ilustración de biología">
+            <div class="visual-card main-card">
+              <img
+                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=900&q=80"
+                alt="Representación de un ADN y una célula"
+              />
+            </div>
+            <div class="floating-tag tag-green">Células</div>
+            <div class="floating-tag tag-yellow">Ecosistemas</div>
+            <div class="floating-tag tag-purple">ADN</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Temas destacados</p>
+            <h2>Una biblioteca de contenidos para explorar la vida</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon-box icon-green">🧬</div>
+              <h3>Genética y herencia</h3>
+              <p>ADN, ARN, reproducción y transmisión de características.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-box icon-blue">🧫</div>
+              <h3>Células y funciones</h3>
+              <p>Estructura celular, organelos y procesos vitales del cuerpo.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-box icon-orange">🌿</div>
+              <h3>Ecosistemas</h3>
+              <p>Biodiversidad, cadenas alimentarias, equilibrio y ambiente.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-box icon-pink">🧠</div>
+              <h3>Salud y bienestar</h3>
+              <p>Sistemas del cuerpo humano, prevención y salud integral.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="niveles" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Plan de estudios</p>
+            <h2>Contenido por nivel escolar</h2>
+          </div>
+
+          <div class="level-controls" aria-label="Selector de niveles">
+            <button class="level-btn is-active" type="button" data-level="1">1°</button>
+            <button class="level-btn" type="button" data-level="2">2°</button>
+            <button class="level-btn" type="button" data-level="3">3°</button>
+            <button class="level-btn" type="button" data-level="4">4°</button>
+            <button class="level-btn" type="button" data-level="5">5°</button>
+            <button class="level-btn" type="button" data-level="6">6°</button>
+          </div>
+
+          <div class="level-panels">
+            <article class="level-panel is-active" data-panel="1">
+              <div class="level-header">
+                <span class="badge badge-green">1.º de Secundaria</span>
+                <h3>Introducción a la Biología</h3>
+              </div>
+              <ul class="topic-list">
+                <li>Introducción a la Biología</li>
+                <li>La célula: estructura y funciones</li>
+                <li>Célula animal y vegetal</li>
+                <li>Composición química de la célula</li>
+                <li>Niveles de organización biológica</li>
+                <li>Sistemas del cuerpo humano</li>
+                <li>Nutrición, respiración y circulación</li>
+                <li>Reproducción y salud sexual</li>
+                <li>Materia y energía</li>
+                <li>Ecosistemas y equilibrio de la naturaleza</li>
+              </ul>
+            </article>
+
+            <article class="level-panel" data-panel="2">
+              <div class="level-header">
+                <span class="badge badge-blue">2.º de Secundaria</span>
+                <h3>Biodiversidad y medio ambiente</h3>
+              </div>
+              <ul class="topic-list">
+                <li>Biodiversidad</li>
+                <li>Clasificación de los seres vivos</li>
+                <li>Reinos de la naturaleza</li>
+                <li>Plantas y animales</li>
+                <li>Ecosistemas</li>
+                <li>Cadenas y redes alimentarias</li>
+                <li>Recursos naturales</li>
+                <li>Medio ambiente y contaminación</li>
+                <li>Cambio climático</li>
+                <li>Salud comunitaria</li>
+              </ul>
+            </article>
+
+            <article class="level-panel" data-panel="3">
+              <div class="level-header">
+                <span class="badge badge-yellow">3.º de Secundaria</span>
+                <h3>Genética y evolución</h3>
+              </div>
+              <ul class="topic-list">
+                <li>Genética y herencia</li>
+                <li>ADN y ARN</li>
+                <li>División celular</li>
+                <li>Mitosis y meiosis</li>
+                <li>Reproducción de los seres vivos</li>
+                <li>Evolución</li>
+                <li>Biodiversidad</li>
+                <li>Ecología</li>
+                <li>Relaciones entre los seres vivos</li>
+              </ul>
+            </article>
+
+            <article class="level-panel" data-panel="4">
+              <div class="level-header">
+                <span class="badge badge-orange">4.º de Secundaria</span>
+                <h3>Anatomía, fisiología y salud</h3>
+              </div>
+              <ul class="topic-list">
+                <li>Anatomía y fisiología humana</li>
+                <li>Sistema nervioso</li>
+                <li>Sistema endocrino</li>
+                <li>Sistema inmunológico</li>
+                <li>Sistema reproductor</li>
+                <li>Salud integral</li>
+                <li>Enfermedades y prevención</li>
+                <li>Sexualidad responsable</li>
+                <li>Medicina tradicional y saberes comunitarios</li>
+              </ul>
+            </article>
+
+            <article class="level-panel" data-panel="5">
+              <div class="level-header">
+                <span class="badge badge-red">5.º de Secundaria</span>
+                <h3>Biotecnología y conservación</h3>
+              </div>
+              <ul class="topic-list">
+                <li>Genética</li>
+                <li>Biotecnología</li>
+                <li>Ingeniería genética</li>
+                <li>Evolución de los seres vivos</li>
+                <li>Ecología</li>
+                <li>Poblaciones y comunidades</li>
+                <li>Biodiversidad de Bolivia</li>
+                <li>Conservación de especies</li>
+                <li>Problemas ambientales</li>
+              </ul>
+            </article>
+
+            <article class="level-panel" data-panel="6">
+              <div class="level-header">
+                <span class="badge badge-purple">6.º de Secundaria</span>
+                <h3>Biología molecular y sociedad</h3>
+              </div>
+              <ul class="topic-list">
+                <li>Biología molecular</li>
+                <li>Genética avanzada</li>
+                <li>Biotecnología</li>
+                <li>Evolución</li>
+                <li>Ecología y conservación</li>
+                <li>Cambio climático</li>
+                <li>Gestión ambiental</li>
+                <li>Salud integral</li>
+                <li>Investigación científica en Biología</li>
+                <li>Aplicaciones de la Biología en la sociedad</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="section section-soft">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Recursos visuales</p>
+            <h2>Imágenes 3D y diagramas de apoyo</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=900&q=80"
+                alt="Modelo 3D de una célula"
+              />
+              <figcaption>Célula 3D</figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?auto=format&fit=crop&w=900&q=80"
+                alt="Estructura del ADN"
+              />
+              <figcaption>ADN y herencia</figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80"
+                alt="Ecosistema verde y biodiversidad"
+              />
+              <figcaption>Ecosistemas</figcaption>
+            </figure>
+
+            <figure class="gallery-card">
+              <img
+                src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80"
+                alt="Ciencia y microscopio"
+              />
+              <figcaption>Investigación científica</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Videos creativos</p>
+            <h2>Material audiovisual para reforzar el aprendizaje</h2>
+          </div>
+
+          <div class="video-grid">
+            <article class="video-card">
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/8tXkJX6Q2ZQ?si=J0k4C9Q7yT8mA7nG"
+                  title="Biología de la célula"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>La célula: estructura y función</h3>
+              <p>Un recorrido visual para comprender los organelos y el funcionamiento celular.</p>
+            </article>
+
+            <article class="video-card">
+              <div class="video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/1r6Lk6b59qE?si=QzaGLW_NgF2l5wYW"
+                  title="Biodiversidad y ecosistemas"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <h3>Biodiversidad y ecosistemas</h3>
+              <p>Explora la relación entre especies, hábitats y equilibrio natural.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section cta-band">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Recursos educativos</p>
+            <h2>Construyendo aprendizaje activo, moderno y accesible.</h2>
+          </div>
+          <a class="btn btn-primary" href="#inicio">Volver arriba</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>BIO MUNDO</h3>
+          <p>Biblioteca digital de biología para estudiantes de secundaria.</p>
+        </div>
+
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Email: info@biomundo.edu</li>
+            <li>Teléfono: +591 2 123 4567</li>
+            <li>Bolivia</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Derechos</h4>
+          <p>© 2026 BIO MUNDO. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
